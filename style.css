@@ -1,0 +1,177 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Light', sans-serif;
+
+}
+html, body{
+    width: 100%;
+    height:100%;
+}
+
+#main{
+    width: 100%;
+}
+#loader{
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    color: white;
+    position: absolute;
+    /* display: none; */
+    z-index: 9999;
+}
+#loader #topheading{
+    /* display: flex; */
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+#topheading h5{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+#loader h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4vw;
+    font-weight: 500;
+
+}
+/* #loader h1 span{
+    font-family: "Mazius-Extraitalic.121a71a7";
+}
+ */
+ .reveal  .parent{
+    display: block;
+ }
+ .reveal .parent{
+
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    overflow-y: hidden;
+    width: 100%;
+
+
+ }
+ .reveal .parent .child{
+    display: block;
+ }
+ .child span {
+    display: inline-block;
+
+ }
+#green{
+    /* display: none; */
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 0vh;
+    background-color: #14CF93;
+    z-index: 999;
+
+}
+#home {
+
+    width: 100%;
+    height: 200vh;
+    background-color: #f0f0f0f0;
+}
+#home #nav{
+    display: flex;
+    justify-content: space-between;
+    padding:0 5vw;
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    align-items: center;
+
+}
+#nav a{
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+
+    color: #000;
+}
+#nav a .line{
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    /* right: 0; */
+    bottom: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .22s;
+    
+}
+#line1 {
+    left: 0;
+    width: 0%;
+    transition-delay: .4s;
+
+}
+#line2 {
+    right: 0;
+    width: 100%;
+
+    
+}
+#nav a:hover .line{
+    width: 0;
+
+
+}
+.row {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 7vw;
+    padding-right: 11vw;
+    align-items: center;
+    line-height: 1.2;
+
+    color: #333;
+}
+.row h1{
+    font-size: 11vw;
+    font-weight: 600;
+
+}
+.row h5{
+    opacity: .6;
+    font-size: 13px;
+    font-weight: 500;
+
+}
+.row .text{
+    margin-top: 0vw;
+}
+.row:nth-child(3){
+margin-top: 0;
+}
+.row svg{
+    height: 9vw;
+    margin: 0 2.5vw;
+} 
+path,polyline{
+    stroke: #14CF93;
+}
